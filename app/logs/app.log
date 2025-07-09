@@ -1,0 +1,8 @@
+2025-07-09 08:56:12,278 - INFO - GET request from 172.18.0.1
+2025-07-09 09:03:50,185 - ERROR - This is a test error log.
+2025-07-09 09:03:54,340 - INFO - GET request from 172.18.0.1
+2025-07-09 09:21:36,561 - INFO - GET request from 172.18.0.1
+2025-07-09 09:21:37,729 - INFO - GET request from 172.18.0.1
+2025-07-09 09:21:38,469 - INFO - GET request from 172.18.0.1
+2025-07-09 09:23:56,234 - ERROR - This is a test error log.
+2025-07-09 09:23:59,640 - INFO - GET request from 172.18.0.1
