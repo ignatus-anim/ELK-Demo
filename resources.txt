@@ -1,0 +1,4 @@
+https://logz.io/blog/deploying-the-elk-stack-on-kubernetes-with-helm/
+https://portworx.com/elasticsearch-kubernetes/
+https://surajsoni3332.medium.com/setting-up-elk-stack-on-kubernetes-a-step-by-step-guide-227690eb57f4
+https://chatgpt.com/share/69a025ac-4dc4-8013-a28a-562773cc4fad
