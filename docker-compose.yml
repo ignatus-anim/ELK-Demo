@@ -1,4 +1,5 @@
 services:
+  # Elasticsearch: Search and analytics engine that stores and indexes log data
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
     container_name: elasticsearch
@@ -6,16 +7,18 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
     ports:
-      - 9200:9200
+      - 9200:9200  # REST API port for data operations
 
+  # Kibana: Web UI for visualizing and exploring data stored in Elasticsearch
   kibana:
     image: docker.elastic.co/kibana/kibana:8.12.0
     container_name: kibana
     ports:
-      - 5601:5601
+      - 5601:5601  # Web interface port
     depends_on:
       - elasticsearch
 
+  # Logstash: Data processing pipeline that ingests, transforms, and sends logs to Elasticsearch
   logstash:
     image: docker.elastic.co/logstash/logstash:8.12.0
     container_name: logstash
@@ -23,15 +26,16 @@ services:
       - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
       - ./app/logs:/logs
     ports:
-      - 5044:5044
-      - 9600:9600
+      - 5044:5044  # Beats input port for receiving log data
+      - 9600:9600  # Monitoring API port for Logstash metrics and health checks
     depends_on:
       - elasticsearch
 
+  # Flask App: Application that generates logs to be collected by the ELK stack
   flaskapp:
     image: flask-elk-app
     container_name: flaskapp
     ports:
-      - 5000:5000
+      - 5000:5000  # Flask application port
     volumes:
       - ./app/logs:/app/logs

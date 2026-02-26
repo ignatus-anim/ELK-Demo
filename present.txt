@@ -1,0 +1,5 @@
+Talk about the General concepts of Observability and Monitoring
+- Metrics
+- Logs
+- Traces
+

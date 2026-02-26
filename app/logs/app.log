@@ -6,3 +6,12 @@
 2025-07-09 09:21:38,469 - INFO - GET request from 172.18.0.1
 2025-07-09 09:23:56,234 - ERROR - This is a test error log.
 2025-07-09 09:23:59,640 - INFO - GET request from 172.18.0.1
+2025-07-10 07:45:45,252 - INFO - GET request from 172.18.0.1
+2025-07-11 08:50:07,135 - INFO - GET request from 172.18.0.1
+2025-07-11 08:52:09,335 - INFO - GET request from 172.18.0.1
+2025-07-11 08:52:36,799 - ERROR - This is a test error log.
+2025-07-11 09:15:56,025 - ERROR - This is a test error log.
+2025-07-11 13:16:33,439 - INFO - GET request from 172.18.0.1
+2025-07-11 14:24:06,252 - ERROR - This is a test error log.
+2025-07-11 14:24:52,787 - INFO - GET request from 172.18.0.1
+2025-07-11 14:24:55,756 - INFO - GET request from 172.18.0.1

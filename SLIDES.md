@@ -1,4 +1,3 @@
-# 🎓 **Presentation Title**:
 
 **Observability with the ELK Stack: Principles, Problems, and Production Realities**
 
